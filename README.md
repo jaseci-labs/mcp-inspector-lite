@@ -1,4 +1,14 @@
-# MCP Inspector
+# MCP Inspector (Pocketnest)
+
+> **⚠️ Pocketnest Internal Use Only** \
+> This is a modified version of the MCP Inspector configured exclusively for testing the **Pocketnest MCP server**. \
+> The client is highly restricted to **SSE transport only** and is always pointed to `{host}/ai/sse`. \
+> Do not use this for general MCP server testing or other project
+
+> **🔧 Build & Deployment Notes** \
+> The built version of this inspector is attached to the Pocketnest base image. \
+> To rebuild, run `npm run build-client` — this will generate a `pocketnest` folder in the project's root directory. \
+> Copy the `pocketnest` folder into your Pocketnest image and rename it to `inspector`.
 
 The MCP inspector is a developer tool for testing and debugging MCP servers.
 
